@@ -6,7 +6,7 @@ import openpyxl
 import pyperclip
 import pyautogui
 from src.cucumber import log, mrh, pth, hju, kng, bru, htm
-from global_config import base_dir, file_path, console_image_paths, seach_image_paths, close_image_paths
+from global_config import base_dir, file_path, console_image_paths, search_image_paths, close_image_paths
 
 
 def load_accounts_from_file(file_path):

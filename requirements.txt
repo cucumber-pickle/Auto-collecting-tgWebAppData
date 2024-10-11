@@ -1,0 +1,9 @@
+pywinauto
+pyautogui
+openpyxl
+pyperclip
+colorama
+keyboard
+pyscreeze
+Pillow
+OpenCV-python

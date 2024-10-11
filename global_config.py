@@ -1,35 +1,31 @@
 
-base_dir = r"E:\TG" #...укажите путь к папке, где хранятся ваши подпапки с профилями телеграм.
+base_dir = r"C:\tg"  # Specify the path to the folder where your subfolders with Telegram profiles are stored.
 
-# Путь к эксель файлу для записи данных
-file_path = r"E:\tg_qr\qur.xlsx" #...укажите ссылку на вашу таблицу эксель.
-
+# Path to the Excel file for writing data
+file_path = r"qur.xlsx"  # Specify the link to your Excel table.
 
 close_image_paths = [r"pic\close1.png",
                      r"pic\close2.png"]
 
-seach_image_paths = [r"pic\seach1.png",
-                     r"pic\seach2.png"]
+search_image_paths = [r"pic\search1.png",
+                      r"pic\search2.png"]
 
-bot_image_paths = [r"E:\tg_qr\pic\bot1.png",
-                   r"E:\tg_qr\pic\bot2.png",
-                   r"E:\tg_qr\pic\bot3.png",
-                   r"E:\tg_qr\pic\bot4.png",
-                   r"E:\tg_qr\pic\bot5.png",]
+bot_image_paths = [r"pic\bot1.png",
+                   r"pic\b1.png",
+                   r"pic\bot2.png",
+                   r"pic\bot3.png",
+                   r"pic\bot4.png",
+                   r"pic\bot5.png"]
 
-# Путь к изображению кнопки "Консоль"
+# Path to the image of the "Console" button
 console_image_paths = [
     r"pic\con1.png",
     r"pic\con2.png",
     r"pic\con3.png",
     r"pic\con4.png",
-    r"pic\con5.png"]  #... укажите путь к файлу "console_tab" - он будет храниться у вас в ддиректории. ПУТЬ К ФАЙЛУ ДОЛЖЕН БЫТЬ НА ЛАТИНИЦЕ'
-
+    r"pic\con5.png"]  # Specify the path to the "console_tab" file - it will be stored in your directory. THE PATH TO THE FILE MUST BE IN LATIN LETTERS.
 
 codes = {
-    "realgoats":"copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
-    "tomarket":"copy+9decodeURIComponent+9sessionStorage.SourceTarget+0.split+9'#tgWebAppData='+0[1].split+9'&tgWebAppVersion='+0[0]+0"}
-
-
-
-
+    "realgoats": "copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    "tomarket": "copy+9decodeURIComponent+9sessionStorage.SourceTarget+0.split+9'#tgWebAppData='+0[1].split+9'&tgWebAppVersion='+0[0]+0"
+}

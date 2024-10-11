@@ -103,9 +103,9 @@ def main(account, bots_list, row):
             code = codes.get(bot, "copy+9Telegram.WebApp.initData+0")
             interact_with_bot(app, bot, code, account, row)
     except Exception as e:
-        log(mrh + f"Error while interacting with account {account}: {e}")
+        log(mrh + f"Error while interacting with account {account} with bot {bot}: {e}")
         open("error.log", "a", encoding="utf-8").write(
-            f"Error while interacting with account {account}: {e} \n")
+            f"Error while interacting with account {account} with bot {bot}: {e} \n")
     finally:
         close_telegram(account)
 
