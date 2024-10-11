@@ -51,7 +51,7 @@ Replace old screenshots in the pic folder.
 
 For easier screenshot cropping, consider using [lightshot](https://app.prntscr.com/en/)
 
-см. [Required Screenshots](#Required-Screenshots)
+ [Required Screenshots](#Required-Screenshots)
 
 5. In the file ```bots.txt ``` – specify the names of the bots in the file ```acc.txt ``` - specify the names of the telegram folders
 
@@ -117,7 +117,7 @@ moonbix
 
 #### If Using Refferal.py:
 1. [seach1](https://github.com/user-attachments/assets/1ec351d0-0b5b-414f-a5b2-0bfc5f0fed48)
-2. [Отдельный скриншот для каждого бота из папки pic/bots](https://github.com/user-attachments/assets/30c1c78f-dd89-46e4-b369-3917d2af71d6)
+2. [Individual screenshots for each bot from the pic/bots folder.](https://github.com/user-attachments/assets/30c1c78f-dd89-46e4-b369-3917d2af71d6)
 
 
 ## Support and Donations
@@ -135,5 +135,5 @@ If you find this bot useful, consider subscribing to our channel or buying me a 
 ## License
 This project is licensed under the `MIT License`.
 
-## Контакты
+## Contacts
 For questions or suggestions, please reach out on Telegram at [CUCUMBER TG CHAT](https://t.me/cucumber_scripts_chat)
