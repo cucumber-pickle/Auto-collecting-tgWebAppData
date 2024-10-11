@@ -51,7 +51,7 @@ Replace old screenshots in the pic folder.
 
 For easier screenshot cropping, consider using [lightshot](https://app.prntscr.com/en/)
 
-см. [Required Screenshots](##Required Screenshots)
+см. [Required Screenshots](#Required-Screenshots)
 
 5. In the file ```bots.txt ``` – specify the names of the bots in the file ```acc.txt ``` - specify the names of the telegram folders
 
