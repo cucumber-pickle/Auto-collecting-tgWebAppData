@@ -1,5 +1,5 @@
 
-base_dir = r"C:\tg"  # Specify the path to the folder where your subfolders with Telegram profiles are stored.
+base_dir = r"E:\tg"  # Specify the path to the folder where your subfolders with Telegram profiles are stored.
 
 # Path to the Excel file for writing data
 file_path = r"qur.xlsx"  # Specify the link to your Excel table.
@@ -7,8 +7,8 @@ file_path = r"qur.xlsx"  # Specify the link to your Excel table.
 close_image_paths = [r"pic\close1.png",
                      r"pic\close2.png"]
 
-search_image_paths = [r"pic\search1.png",
-                      r"pic\search2.png"]
+seach_image_paths = [r"pic\seach1.png",
+                      r"pic\seach2.png"]
 
 bot_image_paths = [r"pic\bot1.png",
                    r"pic\b1.png",

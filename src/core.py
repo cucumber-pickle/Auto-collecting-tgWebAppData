@@ -6,7 +6,7 @@ import openpyxl
 import pyperclip
 import pyautogui
 from src.cucumber import log, mrh, pth, hju, kng, bru, htm
-from global_config import base_dir, file_path, console_image_paths, search_image_paths, close_image_paths
+from global_config import base_dir, file_path, console_image_paths, seach_image_paths, close_image_paths
 
 
 def load_accounts_from_file(file_path):
@@ -34,7 +34,7 @@ def launch_telegram(account_num):
         subprocess.Popen(exe_file)
         log(f"Launching Telegram for account {account_num} from {exe_file}...")
 
-    time.sleep(8)  # Delay to wait for Telegram to launch
+    time.sleep(10)  # Delay to wait for Telegram to launch
     log(hju + "Telegram launched.")
 
     return Application().connect(path=exe_file)
@@ -86,7 +86,7 @@ def click_console(bot_name):
 
     for image_path in console_image_paths:
         try:
-            console_location = pyautogui.locateOnScreen(image_path, confidence=0.8)
+            console_location = pyautogui.locateOnScreen(image_path, confidence=0.9)
             if console_location:  # If the image is found, exit the loop
                 log(hju + f"Console found at coordinates: {console_location}")
                 break
