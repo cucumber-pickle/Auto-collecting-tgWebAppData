@@ -1,0 +1,6 @@
+Ошибка при взаимодействии с аккаунтом 198: local variable 'console_location' referenced before assignment 
+Ошибка при взаимодействии с аккаунтом 198: No windows for that process could be found 
+Error while interacting with account 198: local variable 'console_location' referenced before assignment 
+Error while interacting with account 198: local variable 'console_location' referenced before assignment 
+Error while interacting with account 198: ("Key '`' is not mapped to any known key.", ValueError("Key name '`' is not mapped to any known key.")) 
+Error while interacting with account 198: local variable 'link_location' referenced before assignment 

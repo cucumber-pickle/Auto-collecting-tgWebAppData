@@ -11,6 +11,11 @@ close_image_paths = [r"pic\close1.png",
 seach_image_paths = [r"pic\seach1.png",
                      r"pic\seach2.png"]
 
+bot_image_paths = [r"E:\tg_qr\pic\bot1.png",
+                   r"E:\tg_qr\pic\bot2.png",
+                   r"E:\tg_qr\pic\bot3.png",
+                   r"E:\tg_qr\pic\bot4.png",
+                   r"E:\tg_qr\pic\bot5.png",]
 
 # Путь к изображению кнопки "Консоль"
 console_image_paths = [
@@ -22,8 +27,8 @@ console_image_paths = [
 
 
 codes = {
-    "realgoats_bot":"copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
-    "tomarket_ai_bot":"copy+9decodeURIComponent+9sessionStorage.SourceTarget+0.split+9'#tgWebAppData='+0[1].split+9'&tgWebAppVersion='+0[0]+0"}
+    "realgoats":"copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    "tomarket":"copy+9decodeURIComponent+9sessionStorage.SourceTarget+0.split+9'#tgWebAppData='+0[1].split+9'&tgWebAppVersion='+0[0]+0"}
 
 
 

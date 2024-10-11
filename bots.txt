@@ -1,2 +1,3 @@
-blum
-realgoats_bot
+tomarket
+realgoats
+hamster_kombat_bot
