@@ -37,7 +37,7 @@ Script for Automatic Collection of query_id / user_id for TG Portable Without Us
 [Experimental settings](https://github.com/user-attachments/assets/8f332751-53b3-47f8-83b7-c2ecb6e66f9e) => 
 [Enable webview inspecting](https://github.com/user-attachments/assets/61f3886b-41ce-40c3-aacc-e4dcaabb3452)
 
-2. Set Directory for Telegram Accounts in global_config.py: [папку, где находятся ваши ТГ аккаунты](https://github.com/user-attachments/assets/23dd772b-3b3f-4ddd-829f-27aa35f638aa):
+2.   [Set Directory for Telegram Accounts](https://github.com/user-attachments/assets/23dd772b-3b3f-4ddd-829f-27aa35f638aa): in global_config.py:
 - Specify the folder where your Telegram accounts are located: - ```base_dir = r"C:\tg"```
 
 - Each folder should contain tdata and Telegram.exe (ensure only one account per folder).
