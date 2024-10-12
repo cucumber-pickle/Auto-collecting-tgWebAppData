@@ -11,7 +11,6 @@ seach_image_paths = [r"pic\seach1.png",
                       r"pic\seach2.png"]
 
 bot_image_paths = [r"pic\bot1.png",
-                   r"pic\b1.png",
                    r"pic\bot2.png",
                    r"pic\bot3.png",
                    r"pic\bot4.png",

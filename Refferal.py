@@ -104,7 +104,7 @@ def interact_with_bot(app, bot_name, code, account_num, row):
 # Main function for working with multiple accounts
 def main(account, bots_list, row):
     try:
-        app = launch_telegram(account)
+        app, exe_file = launch_telegram(account)
         open_bot(app)
         for bot in bots_list:
             # Get the specific code for the bot or use the default if not found
@@ -116,7 +116,7 @@ def main(account, bots_list, row):
             f"Error while interacting with account {account} with bot {bot}: {e} \n")
 
     finally:
-        close_telegram(account)
+        close_telegram(account, exe_file)
 
 
 # Loading accounts and bots

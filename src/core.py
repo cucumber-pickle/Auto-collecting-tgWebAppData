@@ -37,11 +37,10 @@ def launch_telegram(account_num):
     time.sleep(10)  # Delay to wait for Telegram to launch
     log(hju + "Telegram launched.")
 
-    return Application().connect(path=exe_file)
+    return Application().connect(path=exe_file), exe_file
 
-def close_telegram(account_num):
+def close_telegram(account_num, exe_file):
     log(f"Closing Telegram for account {account_num}...")
-    exe_file = os.path.join(base_dir, str(account_num), f"{account_num}.exe")
     subprocess.call(f'taskkill /F /IM {os.path.basename(exe_file)}', shell=True)
     time.sleep(4)  # Delay to close
 
