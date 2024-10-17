@@ -85,7 +85,7 @@ def click_console(bot_name):
 
     for image_path in console_image_paths:
         try:
-            console_location = pyautogui.locateOnScreen(image_path, confidence=0.9)
+            console_location = pyautogui.locateOnScreen(image_path, confidence=0.8)
             if console_location:  # If the image is found, exit the loop
                 log(hju + f"Console found at coordinates: {console_location}")
                 break
@@ -122,6 +122,36 @@ def kucoin():
     except Exception as e:
         log(f'Error during KuCoin execution {e}')
         return
+
+def birds():
+    bird_button1 = r"pic\support\bird_button1.png"
+    bird_button2 = r"pic\support\bird_button2.png"
+
+    try:
+        log("Searching for bird button")
+        duck_click = pyautogui.locateOnScreen(bird_button1, confidence=0.9)
+        time.sleep(1)
+        if duck_click:
+            log("Clicking bird button")
+            pyautogui.click(pyautogui.center(duck_click), duration=0.5)
+        else:
+            log("Failed to find bird button")
+        time.sleep(5)
+
+        log("Searching for bird button 2")
+        duck_click = pyautogui.locateOnScreen(bird_button2, confidence=0.9)
+        time.sleep(1)
+        if duck_click:
+            log("Clicking bird button 2")
+            pyautogui.click(pyautogui.center(duck_click), duration=0.5)
+        else:
+            log("Failed to find bird button 2")
+        time.sleep(3)
+
+    except Exception as e:
+        log(f'Error during KuCoin execution {e}')
+        return
+
 
 def duck_chain():
     duck = r"pic\support\duck_button.png"

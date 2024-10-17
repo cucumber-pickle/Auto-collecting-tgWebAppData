@@ -103,6 +103,11 @@ notpixel
 clayton
 moonbix
 1win
+cyberfinancebot
+birds
+pitchtalk
+fomo
+coub
 ```
 
 ## Required Screenshots

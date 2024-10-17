@@ -4,7 +4,7 @@ from pywinauto.keyboard import send_keys
 import pyautogui
 import keyboard
 from src.core import (load_bots_from_file, load_accounts_from_file, launch_telegram, close_telegram,
-                      write_to_excel, click_console, match_quest, kucoin, duck_chain, open_bot, close_app, click_seach)
+                      write_to_excel, click_console, match_quest, kucoin, duck_chain, open_bot, close_app, click_seach, birds)
 from src.cucumber import _banner, log, mrh, pth, hju, kng, bru, htm
 from global_config import codes
 
@@ -92,6 +92,9 @@ def interact_with_bot(app, bot_name, code, account_num, row):
 
     if bot_name == 'kucoin':
         kucoin()
+
+    if bot_name == 'birds':
+        birds()
 
     keyboard.press_and_release('alt+F4')
     time.sleep(1)
