@@ -2,6 +2,7 @@ import pyautogui
 from src.cucumber import log, mrh, pth, hju, kng, bru, htm
 import time
 import pyperclip
+import random
 
 add_to_name = "🍅"
 
@@ -41,8 +42,14 @@ def click_button(button_name):
 
 
 def paste_to_name():
+
+    if random.random() < 0.5:
+        log(bru + "Press TAB before inserting. to insert into the last name")
+        pyautogui.press('tab')
+        time.sleep(1)
+
     # Copy the string to clipboard before pasting
-    log(bru + f'copy and paste it into the nickname {add_to_name}')
+    log(bru + f'Сopy and paste it into the nickname {add_to_name}')
     pyperclip.copy(add_to_name)
     time.sleep(1)
 
