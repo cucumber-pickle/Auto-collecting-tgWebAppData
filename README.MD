@@ -4,6 +4,20 @@ Script for Automatic Collection of query_id / user_id for TG Portable Without Us
 
 [TELEGRAM CHANNEL](https://t.me/cucumber_scripts)
 
+# Warning
+
+Before `git pull` save the `pic` folder with your screenshots to any other folder. 
+So that your screenshots are not updated
+
+## Updates 
+**21.10.2024** 
+
+Аdded the function of adding symbols/icons to the telegram name ([change_name.py](change_name.py)). To use this:
+
+1. save your similar screenshots to the `pic/change_name` folder 
+2. enter what you want to add to the name in the variable `add_to_name` in the file [core_change_name.py](src%2Fcore_change_name.py)
+
+
 ## Installation Instructions
 
 1. **Clone the Repository**
