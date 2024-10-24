@@ -4,7 +4,7 @@ from pywinauto.keyboard import send_keys
 import pyautogui
 import keyboard
 from src.core import (load_bots_from_file, load_accounts_from_file, launch_telegram, close_telegram,
-                      write_to_excel, click_console, match_quest, kucoin, duck_chain, open_bot, close_app, click_seach, birds)
+                      write_to_excel, click_console, match_quest, kucoin, duck_chain, open_bot, close_app, click_seach, birds, money_dogs, catsdogs)
 from src.cucumber import _banner, log, mrh, pth, hju, kng, bru, htm
 from global_config import codes
 
@@ -23,7 +23,7 @@ def click_link(bot_name):  # Give time for the link to display
     if link_location:
         log(hju + "Link found. Clicking on it...")
         pyautogui.click(pyautogui.center(link_location))
-        time.sleep(2)  # Delay before pressing Enter
+        time.sleep(3)  # Delay before pressing Enter
         send_keys('{ENTER}')  # Press Enter after 3 seconds
     else:
         log("Failed to find the link.")
@@ -95,6 +95,13 @@ def interact_with_bot(app, bot_name, code, account_num, row):
 
     if bot_name == 'birds':
         birds()
+
+    if bot_name == 'money_dogs':
+        money_dogs()
+
+    if bot_name == 'catsdogs':
+        catsdogs()
+
 
     keyboard.press_and_release('alt+F4')
     time.sleep(1)

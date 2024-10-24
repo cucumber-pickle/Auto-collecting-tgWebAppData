@@ -5,6 +5,7 @@ from pywinauto import Application
 import openpyxl
 import pyperclip
 import pyautogui
+import random
 from src.cucumber import log, mrh, pth, hju, kng, bru, htm
 from global_config import base_dir, file_path, console_image_paths, seach_image_paths, close_image_paths
 
@@ -34,7 +35,7 @@ def launch_telegram(account_num):
         subprocess.Popen(exe_file)
         log(f"Launching Telegram for account {account_num} from {exe_file}...")
 
-    time.sleep(10)  # Delay to wait for Telegram to launch
+    time.sleep(15)  # Delay to wait for Telegram to launch
     log(hju + "Telegram launched.")
 
     return Application().connect(path=exe_file), exe_file
@@ -108,7 +109,7 @@ def kucoin():
 
     try:
         for _ in range(4):
-            kucoin_click = pyautogui.locateOnScreen(kucoin, confidence=0.9)
+            kucoin_click = pyautogui.locateOnScreen(kucoin, confidence=0.8)
             time.sleep(1)
             if kucoin_click:
                 log("Searching for KuCoin button")
@@ -126,10 +127,11 @@ def kucoin():
 def birds():
     bird_button1 = r"pic\support\bird_button1.png"
     bird_button2 = r"pic\support\bird_button2.png"
+    time.sleep(2)
 
     try:
         log("Searching for bird button")
-        duck_click = pyautogui.locateOnScreen(bird_button1, confidence=0.9)
+        duck_click = pyautogui.locateOnScreen(bird_button1, confidence=0.8)
         time.sleep(1)
         if duck_click:
             log("Clicking bird button")
@@ -139,7 +141,7 @@ def birds():
         time.sleep(5)
 
         log("Searching for bird button 2")
-        duck_click = pyautogui.locateOnScreen(bird_button2, confidence=0.9)
+        duck_click = pyautogui.locateOnScreen(bird_button2, confidence=0.8)
         time.sleep(1)
         if duck_click:
             log("Clicking bird button 2")
@@ -149,7 +151,7 @@ def birds():
         time.sleep(3)
 
     except Exception as e:
-        log(f'Error during KuCoin execution {e}')
+        log(f'Error during birds execution {e}')
         return
 
 
@@ -160,13 +162,81 @@ def duck_chain():
     try:
         try:
             log("Searching for Duck button")
-            duck_click = pyautogui.locateOnScreen(duck, confidence=0.9)
+            duck_click = pyautogui.locateOnScreen(duck, confidence=0.8)
             time.sleep(1)
             if duck_click:
                 log("Clicking Duck button")
                 pyautogui.click(pyautogui.center(duck_click), duration=0.5)
             else:
                 log("Failed to find Duck button")
+
+        except Exception as e:
+            log(f'Error while clicking Duck button {e}')
+            return
+
+        time.sleep(3)
+
+    except Exception as e:
+        log(f'Error during Duck execution {e}')
+        return
+
+
+def money_dogs():
+    money = r"pic\support\money.png"
+    time.sleep(3)
+
+    try:
+        try:
+            log("Searching for Duck button")
+            money_click = pyautogui.locateOnScreen(money, confidence=0.8)
+            time.sleep(1)
+            if money_click:
+                log("Clicking Duck button")
+                pyautogui.click(pyautogui.center(money_click), duration=0.5)
+            else:
+                log("Failed to find Duck button")
+
+        except Exception as e:
+            log(f'Error while clicking Duck button {e}')
+            return
+
+        time.sleep(3)
+
+    except Exception as e:
+        log(f'Error during Duck execution {e}')
+        return
+
+def catsdogs():
+    catsdogs = r"pic\support\catsdogs.png"
+    catsdogs2 = r"pic\support\catsdogs2.png"
+    catsdogs3 = r"pic\support\catsdogs2.png"
+    time.sleep(1)
+
+    try:
+        try:
+            log("Searching for catsdogs button")
+            catsdogs_click = pyautogui.locateOnScreen(catsdogs, confidence=0.8)
+            time.sleep(1)
+            log("Clicking catsdogs button")
+            pyautogui.click(pyautogui.center(catsdogs_click), duration=0.5)
+            time.sleep(2)
+
+            log("Searching for catsdogs button2")
+            if random.random() < 0.5:
+                catsdogs_click = pyautogui.locateOnScreen(catsdogs2, confidence=0.8)
+            else:
+                catsdogs_click = pyautogui.locateOnScreen(catsdogs3, confidence=0.8)
+            time.sleep(1)
+            log("Clicking catsdogs button2")
+            pyautogui.click(pyautogui.center(catsdogs_click), duration=0.5)
+            time.sleep(2)
+
+            log("Searching for catsdogs button3")
+            catsdogs_click = pyautogui.locateOnScreen(catsdogs, confidence=0.8)
+            time.sleep(1)
+            log("Clicking catsdogs button3")
+            pyautogui.click(pyautogui.center(catsdogs_click), duration=0.5)
+            time.sleep(2)
 
         except Exception as e:
             log(f'Error while clicking Duck button {e}')

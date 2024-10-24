@@ -122,6 +122,8 @@ birds
 pitchtalk
 fomo
 coub
+money_dogs
+catsdogs
 ```
 
 ## Required Screenshots
