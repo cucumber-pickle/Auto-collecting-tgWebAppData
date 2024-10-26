@@ -167,15 +167,17 @@ class AutoClicker:
                 img_bgr = cv2.cvtColor(img, cv2.COLOR_BGRA2BGR)
                 hsv = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2HSV)
 
-                if self.game_start_time is None:
+                tickets_out = self.tickets_out()
+                if tickets_out:
+                    break
+
+                elif self.game_start_time is None:
                     self.check_and_click_play_button(sct, monitor)
 
                 elif self.is_game_over():
                     self.logger.log('Игра окончена.')
                     self.random_delay_before_restart()
-                    tickets_out = self.tickets_out()
-                    if tickets_out:
-                        break
+
                     self.game_start_time = None
 
                 else:
