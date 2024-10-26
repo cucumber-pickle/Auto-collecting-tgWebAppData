@@ -7,3 +7,4 @@ keyboard
 pyscreeze
 Pillow
 OpenCV-python
+mss
