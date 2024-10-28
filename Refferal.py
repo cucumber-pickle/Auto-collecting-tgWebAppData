@@ -120,6 +120,9 @@ def interact_with_bot(app, bot_name, code, account_num, row):
     if bot_name == 'catsdogs':
         catsdogs()
 
+    if bot_name == 'bitget':
+        bitget()
+
 
     keyboard.press_and_release('alt+F4')
     time.sleep(1)

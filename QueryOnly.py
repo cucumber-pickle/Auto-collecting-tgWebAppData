@@ -1,10 +1,6 @@
-import time
-from pywinauto.keyboard import send_keys
-import pyautogui
 import keyboard
-from global_config import codes, bot_image_paths
-from src.core import (load_bots_from_file, load_accounts_from_file, launch_telegram, close_telegram,
-                      write_to_excel, click_console, close_app)
+from global_config import *
+from src.core import *
 from src.cucumber import _banner, log, mrh, pth, hju, kng, bru, htm
 
 

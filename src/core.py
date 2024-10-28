@@ -2,6 +2,7 @@ import os
 import subprocess
 import time
 from pywinauto import Application
+from pywinauto.keyboard import send_keys
 import openpyxl
 import pyperclip
 import pyautogui
@@ -9,6 +10,12 @@ import random
 from src.cucumber import log, mrh, pth, hju, kng, bru, htm
 from global_config import base_dir, file_path, console_image_paths, seach_image_paths, close_image_paths
 
+codes = {
+    "realgoats": "copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    "tomarket": "copy+9decodeURIComponent+9sessionStorage.SourceTarget+0.split+9'#tgWebAppData='+0[1].split+9'&tgWebAppVersion='+0[0]+0",
+    "money_dogs": "copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    "bitget": "copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0"
+}
 
 def load_accounts_from_file(file_path):
     """Loads accounts from a text file and returns them as a list."""
@@ -153,7 +160,41 @@ def birds():
     except Exception as e:
         log(f'Error during birds execution {e}')
         return
+def bitget():
+    bitget_button1 = r"pic\support\bitget1.png"
+    bitget_button2 = r"pic\support\bitget2.png"
+    time.sleep(2)
+    biget_code = "180920"
 
+    try:
+        log("Searching for bird button")
+        duck_click = pyautogui.locateOnScreen(bitget_button1, confidence=0.8)
+        time.sleep(1)
+        if duck_click:
+            log("Clicking bird button")
+            pyautogui.click(pyautogui.center(duck_click), duration=0.5)
+        else:
+            log("Failed to find bird button")
+        time.sleep(1)
+
+        log("Searching for bird button 2")
+        duck_click = pyautogui.locateOnScreen(bitget_button2, confidence=0.9)
+        time.sleep(1)
+        if duck_click:
+            log("Clicking bird button 2")
+            pyautogui.click(pyautogui.center(duck_click), duration=0.5)
+        else:
+            log("Failed to find bird button 2")
+        time.sleep(3)
+
+        send_keys(biget_code)
+        time.sleep(3)
+
+        send_keys(biget_code)
+        time.sleep(5)
+    except Exception as e:
+        log(f'Error during birds execution {e}')
+        return
 
 def duck_chain():
     duck = r"pic\support\duck_button.png"
