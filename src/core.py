@@ -164,7 +164,7 @@ def bitget():
     bitget_button1 = r"pic\support\bitget1.png"
     bitget_button2 = r"pic\support\bitget2.png"
     time.sleep(2)
-    biget_code = "180920"
+    biget_code = ""
 
     try:
         log("Searching for bird button")
