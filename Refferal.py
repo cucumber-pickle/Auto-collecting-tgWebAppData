@@ -1,12 +1,8 @@
-import time
-import random
 from pywinauto.keyboard import send_keys
-import pyautogui
 import keyboard
-from src.core import (load_bots_from_file, load_accounts_from_file, launch_telegram, close_telegram,
-                      write_to_excel, click_console, match_quest, kucoin, duck_chain, open_bot, close_app, click_seach, birds, money_dogs, catsdogs)
+from src.core import *
 from src.cucumber import _banner, log, mrh, pth, hju, kng, bru, htm
-from global_config import codes
+from global_config import *
 
 
 # Function to search and click on the link
@@ -14,7 +10,7 @@ def click_link(bot_name):  # Give time for the link to display
 
     link = fr"pic\bots\{bot_name}.png"
     try:
-        link_location = pyautogui.locateOnScreen(link, confidence=0.7)
+        link_location = pyautogui.locateOnScreen(link, confidence=0.8)
         time.sleep(1)
 
     except Exception as e:
@@ -25,6 +21,25 @@ def click_link(bot_name):  # Give time for the link to display
         pyautogui.click(pyautogui.center(link_location))
         time.sleep(3)  # Delay before pressing Enter
         send_keys('{ENTER}')  # Press Enter after 3 seconds
+    else:
+        log("Failed to find the link.")
+
+def click_bot():
+    time.sleep(1)  # Give time for the link to appear
+
+    for image_path in bot_image_paths:
+        try:
+            link_location = pyautogui.locateOnScreen(image_path, confidence=0.8)
+            if link_location:  # If the image is found, exit the loop
+                break
+        except Exception as e:
+            log(f'Error while searching for image {image_path}: {e}')
+
+    if link_location:
+        log(hju + "Link found. Clicking on it...")
+        pyautogui.click(pyautogui.center(link_location))
+        time.sleep(1)  # Delay before pressing Enter
+        send_keys('{ENTER}')  # Press Enter after 1 second
     else:
         log("Failed to find the link.")
 
@@ -53,6 +68,9 @@ def interact_with_bot(app, bot_name, code, account_num, row):
     click_link(bot_name)
 
     time.sleep(2)
+
+    if bot_name == "bump":
+        click_bot()
 
     # Open Developer Tools (press F12)
     log("Pressing F12 to open Developer Tools...")
