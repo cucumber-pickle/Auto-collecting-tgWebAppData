@@ -19,7 +19,8 @@ def click_link(bot_name):  # Give time for the link to display
     if link_location:
         log(hju + "Link found. Clicking on it...")
         pyautogui.click(pyautogui.center(link_location))
-        time.sleep(3)  # Delay before pressing Enter
+        time.sleep(3)
+        # Delay before pressing Enter
         send_keys('{ENTER}')  # Press Enter after 3 seconds
     else:
         log("Failed to find the link.")
@@ -69,9 +70,10 @@ def interact_with_bot(app, bot_name, code, account_num, row):
 
     time.sleep(2)
 
-    if bot_name == "bump":
+    if bot_name == "bump" or bot_name == "dotcoin":
         click_bot()
 
+    time.sleep(2)
     # Open Developer Tools (press F12)
     log("Pressing F12 to open Developer Tools...")
     send_keys('{F12}')
