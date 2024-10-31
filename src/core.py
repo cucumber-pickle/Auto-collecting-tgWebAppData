@@ -10,12 +10,13 @@ import random
 from src.cucumber import log, mrh, pth, hju, kng, bru, htm
 from global_config import base_dir, file_path, console_image_paths, seach_image_paths, close_image_paths
 
-codes = {
-    "realgoats": "copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
-    "tomarket": "copy+9decodeURIComponent+9sessionStorage.SourceTarget+0.split+9'#tgWebAppData='+0[1].split+9'&tgWebAppVersion='+0[0]+0",
-    "money_dogs": "copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
-    "bitget": "copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0"
-}
+codes = dict(
+    realgoats="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    tomarket="copy+9decodeURIComponent+9sessionStorage.SourceTarget+0.split+9'#tgWebAppData='+0[1].split+9'&tgWebAppVersion='+0[0]+0",
+    money_dogs="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    bitget="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    drops_coin="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    free_dogs="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0")
 
 def load_accounts_from_file(file_path):
     """Loads accounts from a text file and returns them as a list."""
@@ -221,6 +222,30 @@ def duck_chain():
         log(f'Error during Duck execution {e}')
         return
 
+def coub():
+    duck = r"pic\support\coub_button.png"
+    time.sleep(1)
+
+    try:
+        try:
+            log("Searching for Duck button")
+            duck_click = pyautogui.locateOnScreen(duck, confidence=0.8)
+            time.sleep(1)
+            if duck_click:
+                log("Clicking Duck button")
+                pyautogui.click(pyautogui.center(duck_click), duration=0.5)
+            else:
+                log("Failed to find Duck button")
+
+        except Exception as e:
+            log(f'Error while clicking Duck button {e}')
+            return
+
+        time.sleep(3)
+
+    except Exception as e:
+        log(f'Error during Duck execution {e}')
+        return
 
 def money_dogs():
     money = r"pic\support\money.png"
