@@ -128,6 +128,9 @@ def interact_with_bot(app, bot_name, code, account_num, row):
     if bot_name == 'coub':
         coub()
 
+    if bot_name == "etherdrops":
+        etherdrops()
+
 
     keyboard.press_and_release('alt+F4')
     time.sleep(1)

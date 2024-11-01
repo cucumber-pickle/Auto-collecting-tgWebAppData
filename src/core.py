@@ -132,6 +132,39 @@ def kucoin():
         log(f'Error during KuCoin execution {e}')
         return
 
+
+def etherdrops():
+    kucoin = r"pic\support\ether_b1.png"
+    ether2 = r"pic\support\ether_b2.png"
+    time.sleep(3)
+
+    try:
+        for _ in range(3):
+            kucoin_click = pyautogui.locateOnScreen(kucoin, confidence=0.8)
+            time.sleep(1)
+            if kucoin_click:
+                log("Searching for ether button")
+                pyautogui.click(pyautogui.center(kucoin_click), duration=0.5)
+                time.sleep(1)
+            else:
+                log("Failed to find ether button")
+        time.sleep(1)
+    except Exception as e:
+        log(f'Error during ether execution {e}')
+
+    try:
+        kucoin_click2 = pyautogui.locateOnScreen(ether2, confidence=0.8)
+        time.sleep(1)
+        if kucoin_click2:
+            log("Searching for ether2 button")
+            pyautogui.click(pyautogui.center(kucoin_click2), duration=0.5)
+            time.sleep(2)
+        else:
+            log("Failed to find ether2 button")
+    except Exception as e:
+        log(f'Error during ether2 execution {e}')
+        return
+
 def birds():
     bird_button1 = r"pic\support\bird_button1.png"
     bird_button2 = r"pic\support\bird_button2.png"
