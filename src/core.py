@@ -16,7 +16,9 @@ codes = dict(
     money_dogs="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
     bitget="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
     drops_coin="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
-    freedogs="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0")
+    freedogs="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    pumpad="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0"
+)
 
 def load_accounts_from_file(file_path):
     """Loads accounts from a text file and returns them as a list."""
@@ -165,6 +167,55 @@ def etherdrops():
         log(f'Error during ether2 execution {e}')
         return
 
+
+def fastmint():
+    bird_button1 = r"pic\support\fastmint_b1.png"
+    bird_button2 = r"pic\support\fastmint_b2.png"
+    bird_button3 = r"pic\support\fastmint_b3.png"
+    time.sleep(6)
+
+    try:
+        pyautogui.scroll(-300)
+        time.sleep(1)
+        log("Searching for fastmint_b1")
+        duck_click = pyautogui.locateOnScreen(bird_button1, confidence=0.8)
+        time.sleep(1)
+        if duck_click:
+            log("Clicking fastmint_b1")
+            pyautogui.click(pyautogui.center(duck_click), duration=0.5)
+        else:
+            log("Failed to find fastmint_b1")
+        time.sleep(2)
+
+        pyautogui.scroll(-300)
+        time.sleep(1)
+        log("Searching for fastmint_b2")
+        duck_click = pyautogui.locateOnScreen(bird_button2, confidence=0.8)
+        time.sleep(1)
+        if duck_click:
+            log("Clicking fastmint_b2")
+            pyautogui.click(pyautogui.center(duck_click), duration=0.5)
+        else:
+            log("Failed to fastmint_b2")
+        time.sleep(2)
+
+        pyautogui.scroll(-300)
+        time.sleep(1)
+        log("Searching for fastmint_b3")
+        duck_click = pyautogui.locateOnScreen(bird_button3, confidence=0.8)
+        time.sleep(1)
+        if duck_click:
+            log("Clicking fastmint_b3")
+            pyautogui.click(pyautogui.center(duck_click), duration=0.5)
+        else:
+            log("Failed to fastmint_b3")
+        time.sleep(2)
+
+    except Exception as e:
+        log(f'Error during fastmint execution {e}')
+        return
+
+
 def birds():
     bird_button1 = r"pic\support\bird_button1.png"
     bird_button2 = r"pic\support\bird_button2.png"
@@ -303,6 +354,31 @@ def money_dogs():
 
     except Exception as e:
         log(f'Error during Duck execution {e}')
+        return
+
+def padton():
+    money = r"pic\support\padton_button.png"
+    time.sleep(3)
+
+    try:
+        try:
+            log("Searching for padton_button")
+            money_click = pyautogui.locateOnScreen(money, confidence=0.8)
+            time.sleep(1)
+            if money_click:
+                log("Clicking padton_button")
+                pyautogui.click(pyautogui.center(money_click), duration=0.5)
+            else:
+                log("Failed to find padton_button")
+
+        except Exception as e:
+            log(f'Error while clicking padton_button {e}')
+            return
+
+        time.sleep(3)
+
+    except Exception as e:
+        log(f'Error during padton_button {e}')
         return
 
 def catsdogs():

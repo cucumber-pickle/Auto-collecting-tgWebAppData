@@ -70,8 +70,13 @@ def interact_with_bot(app, bot_name, code, account_num, row):
 
     time.sleep(2)
 
-    if bot_name == "bump" or bot_name == "dotcoin":
+    bots_follow = ["bump", "dotcoin", 'otter_loot', 'fastmint', 'padton']
+
+    if bot_name in bots_follow:
         click_bot()
+
+    if bot_name == "fastmint":
+        fastmint()
 
     time.sleep(2)
     # Open Developer Tools (press F12)
@@ -130,6 +135,9 @@ def interact_with_bot(app, bot_name, code, account_num, row):
 
     if bot_name == "etherdrops":
         etherdrops()
+
+    if bot_name == "padton":
+        padton()
 
 
     keyboard.press_and_release('alt+F4')
