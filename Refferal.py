@@ -1,5 +1,3 @@
-from pywinauto.keyboard import send_keys
-import keyboard
 from src.core import *
 from src.cucumber import _banner, log, mrh, pth, hju, kng, bru, htm
 from global_config import *
@@ -139,6 +137,11 @@ def interact_with_bot(app, bot_name, code, account_num, row):
     if bot_name == "padton":
         padton()
 
+    if bot_name == "fabrika":
+        fabrika()
+
+    if bot_name == "pumpad":
+        pumpad()
 
     keyboard.press_and_release('alt+F4')
     time.sleep(1)

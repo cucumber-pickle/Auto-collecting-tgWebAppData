@@ -1,6 +1,7 @@
 import os
 import subprocess
 import time
+import keyboard
 from pywinauto import Application
 from pywinauto.keyboard import send_keys
 import openpyxl
@@ -17,7 +18,8 @@ codes = dict(
     bitget="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
     drops_coin="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
     freedogs="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
-    pumpad="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0"
+    pumpad="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    neuton="copy+9decodeURIComponent+9sessionStorage['tapps/launchParams']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0"
 )
 
 def load_accounts_from_file(file_path):
@@ -381,10 +383,99 @@ def padton():
         log(f'Error during padton_button {e}')
         return
 
+
+def pumpad():
+    fabrika1 = r"pic\support\pumpad_b1.png"
+    fabrika2 = r"pic\support\pumpad_b2.png"
+    fabrika3 = r"pic\support\pumpad_b3.png"
+    time.sleep(1)
+
+
+    try:
+        log("Searching for pumpad button")
+        fabrika_click = pyautogui.locateOnScreen(fabrika1, confidence=0.8)
+        time.sleep(1)
+        log("Clicking pumpad button")
+        pyautogui.click(pyautogui.center(fabrika_click), duration=0.5)
+        time.sleep(3)
+
+        log("Searching for pumpad button")
+        fabrika_click = pyautogui.locateOnScreen(fabrika2, confidence=0.8)
+        time.sleep(1)
+        log("Clicking pumpad button")
+        pyautogui.click(pyautogui.center(fabrika_click), duration=0.5)
+        time.sleep(2)
+
+        keyboard.press_and_release('alt+tab')
+
+        time.sleep(1)
+        log("Searching for pumpad button")
+        fabrika_click = pyautogui.locateOnScreen(fabrika3, confidence=0.8)
+        time.sleep(1)
+        log("Clicking pumpad button")
+        pyautogui.click(pyautogui.center(fabrika_click), duration=0.5)
+        time.sleep(3)
+
+
+
+    except Exception as e:
+        log(f'Error during Duck execution {e}')
+        return
+
+
+def fabrika():
+    fabrika1 = r"pic\support\fabrika_b1.png"
+    fabrika2 = r"pic\support\fabrika_b2.png"
+    fabrika3 = r"pic\support\fabrika_b3.png"
+    fabrika4 = r"pic\support\fabrika_b4.png"
+    time.sleep(1)
+
+
+    try:
+        log("Searching for fabrika button")
+        fabrika_click = pyautogui.locateOnScreen(fabrika1, confidence=0.8)
+        time.sleep(1)
+        log("Clicking fabrika button")
+        pyautogui.click(pyautogui.center(fabrika_click), duration=0.5)
+        time.sleep(2)
+
+        log("Searching for fabrika button")
+        fabrika_click = pyautogui.locateOnScreen(fabrika2, confidence=0.8)
+        time.sleep(1)
+        log("Clicking fabrika button")
+        pyautogui.click(pyautogui.center(fabrika_click), duration=0.5)
+        time.sleep(2)
+
+        log("Searching for fabrika button")
+        fabrika_click = pyautogui.locateOnScreen(fabrika3, confidence=0.8)
+        time.sleep(1)
+        log("Clicking fabrika button")
+        pyautogui.click(pyautogui.center(fabrika_click), duration=0.5)
+        time.sleep(2)
+
+        log("Searching for fabrika button")
+        fabrika_click = pyautogui.locateOnScreen(fabrika3, confidence=0.8)
+        time.sleep(1)
+        log("Clicking fabrika button")
+        pyautogui.click(pyautogui.center(fabrika_click), duration=0.5)
+        time.sleep(2)
+
+        log("Searching for fabrika button")
+        fabrika_click = pyautogui.locateOnScreen(fabrika4, confidence=0.8)
+        time.sleep(1)
+        log("Clicking fabrika button")
+        pyautogui.click(pyautogui.center(fabrika_click), duration=0.5)
+        time.sleep(2)
+
+
+    except Exception as e:
+        log(f'Error during Duck execution {e}')
+        return
+
 def catsdogs():
     catsdogs = r"pic\support\catsdogs.png"
     catsdogs2 = r"pic\support\catsdogs2.png"
-    catsdogs3 = r"pic\support\catsdogs2.png"
+    catsdogs3 = r"pic\support\catsdogs3.png"
     time.sleep(1)
 
     try:
