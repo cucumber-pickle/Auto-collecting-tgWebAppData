@@ -2,7 +2,14 @@
 # Auto collecting tgWebAppData
 Script for Automatic Collection of query_id / user_id for TG Portable Without Using TG API
 
-[TELEGRAM CHANNEL](https://t.me/cucumber_scripts)
+[![Join our Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/cucumber_scripts)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cucumber-pickle/Cucumber)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@cucumber_scripts)
+
+
+# Video guide
+
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/4gnW1REdwf8?si=0gVxFuOCroLe1EnX)
 
 # Warning
 
@@ -96,34 +103,73 @@ tomarket
 #### If Using Refferal.py, Include:
 
 ```ruby
+1win
+agent301bot
+
 banana
+bfdcoin
+birds
+bitget
 blum
+bump
+bums
+
+catsdogs
+clayton
+coub
+cyberfinancebot
+
+depin
+diamore
+dotcoin
+drops_coin
+drumtap
+duckchain
+
+etherdrops
+
+fabrika
+fastmint
+fintopio
+freedogs
+
+hamster
+hopium
+
 kucoin
+
+limecoin
+
 major
 matchquest
-pocketfi
-realgoats
-tomarket
-depin
-hamster
 memefi
-snapster
-duckchain
-yescoin
-agent301bot
-fintopio
-okx
-notpixel
-clayton
-moonbix
-1win
-cyberfinancebot
-birds
-pitchtalk
-fomo
-coub
 money_dogs
-catsdogs
+moonbix
+moonrabbits
+
+neuton
+nomis
+notpixel
+
+okx
+otter_loot
+
+paws
+padton
+pitchtalk
+pocketfi
+pumpad
+
+realgoats
+
+snapster
+
+tomarket
+tonstationgames
+
+vooi
+
+yescoin
 ```
 
 ## Required Screenshots

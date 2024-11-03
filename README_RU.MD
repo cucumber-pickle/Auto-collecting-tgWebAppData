@@ -2,7 +2,13 @@
 # Auto collecting tgWebAppData
 Скрипт для автоматического сбора query_id / user_id для TG portable без использования API TG
 
-[TELEGRAM CHANNEL](https://t.me/cucumber_scripts)
+[![Join our Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/cucumber_scripts)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cucumber-pickle/Cucumber)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@cucumber_scripts)
+
+# Видео Гайд
+
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/4gnW1REdwf8?si=0gVxFuOCroLe1EnX)
 
 ## Инструкции по установке
 
