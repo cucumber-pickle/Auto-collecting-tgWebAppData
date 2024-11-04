@@ -386,8 +386,9 @@ def padton():
 
 def pumpad():
     fabrika1 = r"pic\support\pumpad_b1.png"
-    fabrika2 = r"pic\support\pumpad_b2.png"
     fabrika3 = r"pic\support\pumpad_b3.png"
+    bot_image_paths = [r"pic\support\pumpad_b2.png",
+                       r"pic\support\pumpad_b4.png"]
     time.sleep(1)
 
 
@@ -399,11 +400,16 @@ def pumpad():
         pyautogui.click(pyautogui.center(fabrika_click), duration=0.5)
         time.sleep(3)
 
-        log("Searching for pumpad button")
-        fabrika_click = pyautogui.locateOnScreen(fabrika2, confidence=0.8)
-        time.sleep(1)
+        for image_path in bot_image_paths:
+            try:
+                link_location = pyautogui.locateOnScreen(image_path, confidence=0.8)
+                if link_location:  # If the image is found, exit the loop
+                    break
+            except Exception as e:
+                log(f'Error while searching for image {image_path}: {e}')
+
         log("Clicking pumpad button")
-        pyautogui.click(pyautogui.center(fabrika_click), duration=0.5)
+        pyautogui.click(pyautogui.center(link_location), duration=0.5)
         time.sleep(2)
 
         keyboard.press_and_release('alt+tab')
