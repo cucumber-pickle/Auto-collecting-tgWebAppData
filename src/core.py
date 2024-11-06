@@ -19,7 +19,8 @@ codes = dict(
     drops_coin="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
     freedogs="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
     pumpad="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
-    neuton="copy+9decodeURIComponent+9sessionStorage['tapps/launchParams']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0"
+    neuton="copy+9decodeURIComponent+9sessionStorage['tapps/launchParams']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    catsgang="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0"
 )
 
 def load_accounts_from_file(file_path):
