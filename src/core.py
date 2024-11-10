@@ -13,6 +13,7 @@ from global_config import base_dir, file_path, console_image_paths, seach_image_
 
 codes = dict(
     realgoats="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
+    tomarket_ai_bot="copy+9decodeURIComponent+9sessionStorage.SourceTarget+0.split+9'#tgWebAppData='+0[1].split+9'&tgWebAppVersion='+0[0]+0",
     tomarket="copy+9decodeURIComponent+9sessionStorage.SourceTarget+0.split+9'#tgWebAppData='+0[1].split+9'&tgWebAppVersion='+0[0]+0",
     money_dogs="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
     bitget="copy+9decodeURIComponent+9sessionStorage['telegram-apps/launch-params']+0.split+9'tgWebAppData='+0[1].split+9'&tgWebAppStartParam'+0[0]+0",
@@ -248,6 +249,25 @@ def birds():
     except Exception as e:
         log(f'Error during birds execution {e}')
         return
+
+def kiloextrade():
+    bird_button1 = r"pic\support\kilo_b1.png"
+
+    try:
+        log("Searching for kiloextrade button")
+        duck_click = pyautogui.locateOnScreen(bird_button1, confidence=0.8)
+        time.sleep(1)
+        if duck_click:
+            log("Clicking kiloextrade button")
+            pyautogui.click(pyautogui.center(duck_click), duration=0.5)
+        else:
+            log("Failed to find kiloextrade button")
+        time.sleep(2)
+
+    except Exception as e:
+        log(f'Error during kiloextrade execution {e}')
+        return
+
 def bitget():
     bitget_button1 = r"pic\support\bitget1.png"
     bitget_button2 = r"pic\support\bitget2.png"
