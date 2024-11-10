@@ -137,6 +137,7 @@ freedogs
 hamster
 hopium
 
+kiloextrade
 kucoin
 
 limecoin
