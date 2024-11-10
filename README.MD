@@ -123,6 +123,7 @@ cyberfinancebot
 depin
 diamore
 dotcoin
+dormint
 drops_coin
 drumtap
 duckchain
@@ -146,6 +147,7 @@ major
 matchquest
 memefi
 memes_war
+midas
 money_dogs
 moonbix
 moonrabbits
