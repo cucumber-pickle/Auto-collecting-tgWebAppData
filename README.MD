@@ -145,6 +145,7 @@ limecoin
 major
 matchquest
 memefi
+memes_war
 money_dogs
 moonbix
 moonrabbits
